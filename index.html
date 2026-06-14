@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed Maseera — MCA Student & Aspiring Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">SM<span class="logo-dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#coding">Coding</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content reveal">
+      <div class="monogram-ring">
+        <svg class="ring-svg" viewBox="0 0 160 160"><circle cx="80" cy="80" r="70" stroke="url(#ringGrad)" stroke-width="2" fill="none" stroke-dasharray="6 4"/><defs><linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#c084fc"/></linearGradient></defs></svg>
+        <div class="monogram-inner">SM</div>
+      </div>
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">Syed Maseera</h1>
+      <div class="hero-typing-wrap">
+        <span class="typing-prefix">I'm a </span><span id="typingText" class="typing-text"></span><span class="typing-cursor">|</span>
+      </div>
+      <p class="hero-tagline">Passionate about Python · Data Analytics · Artificial Intelligence · Continuous Learning</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-code"></i> View Projects</a>
+        <a href="#contact" class="btn btn-ghost"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/MaseeraSyed" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/syed-maseera/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:maseerasyed16@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span></span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label reveal">About Me</div>
+      <h2 class="section-title reveal">Turning curiosity into <span class="grad-text">solutions</span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I am an MCA student at <strong>Narayana Engineering College, Nellore</strong>, with a strong interest in Python programming, Data Analytics, Artificial Intelligence, and Software Development. I enjoy building innovative solutions and continuously improving my technical skills through projects, certifications, internships, coding practice, and hands-on learning experiences.</p>
+          <p>I am passionate about leveraging technology to solve real-world problems and create meaningful impact.</p>
+          <div class="about-tags">
+            <span><i class="fa-brands fa-python"></i> Python</span>
+            <span><i class="fa-solid fa-chart-bar"></i> Data Analytics</span>
+            <span><i class="fa-solid fa-brain"></i> AI & ML</span>
+            <span><i class="fa-solid fa-database"></i> SQL</span>
+          </div>
+        </div>
+        <div class="counters-grid reveal">
+          <div class="counter-card glass">
+            <div class="counter-num" data-target="5">0</div>
+            <div class="counter-label">Certifications</div>
+          </div>
+          <div class="counter-card glass">
+            <div class="counter-num" data-target="3">0</div>
+            <div class="counter-label">Projects</div>
+          </div>
+          <div class="counter-card glass">
+            <div class="counter-num" data-target="5">0</div>
+            <div class="counter-label">HackerRank Stars</div>
+          </div>
+          <div class="counter-card glass">
+            <div class="counter-num" data-target="2">0</div>
+            <div class="counter-label">Internships</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section alt-bg">
+    <div class="container">
+      <div class="section-label reveal">Education</div>
+      <h2 class="section-title reveal">Academic <span class="grad-text">Journey</span></h2>
+      <div class="timeline reveal">
+        <div class="timeline-item glass">
+          <div class="tl-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="tl-body">
+            <span class="tl-badge">Current</span>
+            <h3>Master of Computer Applications (MCA)</h3>
+            <p class="tl-place"><i class="fa-solid fa-location-dot"></i> Narayana Engineering College, Nellore</p>
+            <p class="tl-desc">Specializing in software development, data analytics, and artificial intelligence. Actively building projects, earning certifications, and preparing for a career in tech.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-label reveal">Skills</div>
+      <h2 class="section-title reveal">Technical <span class="grad-text">Arsenal</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card glass reveal">
+          <div class="skill-card-icon"><i class="fa-solid fa-terminal"></i></div>
+          <h3>Programming</h3>
+          <ul class="skill-list">
+            <li><i class="fa-brands fa-python"></i> Python</li>
+            <li><i class="fa-solid fa-database"></i> SQL</li>
+            <li><i class="fa-brands fa-java"></i> Java <span class="badge-sm">Beginner</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-card-icon"><i class="fa-solid fa-chart-pie"></i></div>
+          <h3>Data & Analytics</h3>
+          <ul class="skill-list">
+            <li><i class="fa-solid fa-magnifying-glass-chart"></i> Data Analysis</li>
+            <li><i class="fa-solid fa-file-excel"></i> Microsoft Excel</li>
+            <li><i class="fa-solid fa-chart-column"></i> Power BI</li>
+            <li><i class="fa-solid fa-chart-area"></i> Data Visualization</li>
+          </ul>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <h3>Tools & Technologies</h3>
+          <ul class="skill-list">
+            <li><i class="fa-brands fa-git-alt"></i> Git</li>
+            <li><i class="fa-brands fa-github"></i> GitHub</li>
+            <li><i class="fa-solid fa-code"></i> VS Code</li>
+            <li><i class="fa-solid fa-robot"></i> AI Tools</li>
+          </ul>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-card-icon"><i class="fa-solid fa-people-group"></i></div>
+          <h3>Soft Skills</h3>
+          <ul class="skill-list">
+            <li><i class="fa-solid fa-comments"></i> Communication</li>
+            <li><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</li>
+            <li><i class="fa-solid fa-handshake"></i> Teamwork</li>
+            <li><i class="fa-solid fa-arrows-spin"></i> Adaptability</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section alt-bg">
+    <div class="container">
+      <div class="section-label reveal">Projects</div>
+      <h2 class="section-title reveal">What I've <span class="grad-text">Built</span></h2>
+
+      <!-- Featured Project -->
+      <div class="featured-project glass reveal">
+        <div class="featured-badge"><i class="fa-solid fa-star"></i> Featured Project</div>
+        <div class="featured-inner">
+          <div class="featured-text">
+            <h3 class="featured-title">InsightHire</h3>
+            <p class="featured-subtitle">AI Resume Analyzer</p>
+            <p class="featured-desc">InsightHire is an AI-powered Resume Analyzer designed to help job seekers improve their resumes. The platform analyzes resumes, evaluates skills and content, and provides intelligent insights and recommendations to enhance employability. This project demonstrates my interest in Artificial Intelligence, Python development, and practical problem-solving.</p>
+            <div class="tech-badges">
+              <span>Python</span>
+              <span>AI/ML</span>
+              <span>NLP</span>
+              <span>Data Analysis</span>
+              <span>PDF Parsing</span>
+            </div>
+            <div class="featured-btns">
+              <a href="https://github.com/MaseeraSyed" target="_blank" class="btn btn-primary btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-ghost btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+          <div class="featured-visual">
+            <div class="project-visual-card">
+              <div class="pvc-header">
+                <span class="pvc-dot r"></span><span class="pvc-dot y"></span><span class="pvc-dot g"></span>
+                <span class="pvc-title">insighthire.py</span>
+              </div>
+              <div class="pvc-code">
+                <p><span class="c-kw">import</span> <span class="c-mod">anthropic</span></p>
+                <p><span class="c-kw">from</span> <span class="c-mod">resume_parser</span> <span class="c-kw">import</span> parse</p>
+                <p>&nbsp;</p>
+                <p><span class="c-fn">def</span> <span class="c-name">analyze_resume</span>(file):</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;data <span class="c-op">=</span> parse(file)</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;insights <span class="c-op">=</span> ai.evaluate(data)</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-kw">return</span> insights</p>
+                <p>&nbsp;</p>
+                <p><span class="c-comm"># AI-powered feedback</span></p>
+                <p>result <span class="c-op">=</span> <span class="c-name">analyze_resume</span>(<span class="c-str">"cv.pdf"</span>)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Projects -->
+      <div class="projects-mini-grid">
+        <div class="mini-project glass reveal">
+          <div class="mini-proj-icon"><i class="fa-solid fa-globe"></i></div>
+          <h4>Portfolio Website</h4>
+          <p>A personal portfolio website showcasing skills, certifications, projects, and achievements.</p>
+          <div class="tech-badges sm">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+        </div>
+        <div class="mini-project glass reveal">
+          <div class="mini-proj-icon"><i class="fa-brands fa-python"></i></div>
+          <h4>Python Mini Projects</h4>
+          <p>A collection of Python applications developed to strengthen programming and problem-solving skills.</p>
+          <div class="tech-badges sm">
+            <span>Python</span><span>OOP</span><span>CLI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-label reveal">Certifications</div>
+      <h2 class="section-title reveal">Verified <span class="grad-text">Learning</span></h2>
+      <div class="certs-grid">
+
+        <div class="cert-card glass reveal">
+          <div class="cert-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <div class="cert-body">
+            <span class="cert-issuer">Cisco</span>
+            <h4>Python Essentials</h4>
+            <p>Foundational Python programming concepts and data structures.</p>
+          </div>
+          <div class="cert-badge-wrap"><span class="cert-badge">Certified</span></div>
+        </div>
+
+        <div class="cert-card glass reveal">
+          <div class="cert-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <div class="cert-body">
+            <span class="cert-issuer">Cisco</span>
+            <h4>Python Programming</h4>
+            <p>Advanced Python programming skills and application development.</p>
+          </div>
+          <div class="cert-badge-wrap"><span class="cert-badge">Certified</span></div>
+        </div>
+
+        <div class="cert-card glass reveal">
+          <div class="cert-icon"><i class="fa-solid fa-chart-column"></i></div>
+          <div class="cert-body">
+            <span class="cert-issuer">Simplilearn</span>
+            <h4>Power BI Basics</h4>
+            <p>Data visualization and business intelligence with Microsoft Power BI.</p>
+          </div>
+          <div class="cert-badge-wrap"><span class="cert-badge">Certified</span></div>
+        </div>
+
+        <div class="cert-card glass reveal">
+          <div class="cert-icon"><i class="fa-brands fa-microsoft"></i></div>
+          <div class="cert-body">
+            <span class="cert-issuer">Microsoft & LinkedIn</span>
+            <h4>Career Essentials in Data Analysis</h4>
+            <p>Professional data analysis fundamentals recognized by Microsoft.</p>
+          </div>
+          <div class="cert-badge-wrap"><span class="cert-badge">Certified</span></div>
+        </div>
+
+        <div class="cert-card glass reveal">
+          <div class="cert-icon"><i class="fa-solid fa-book-open"></i></div>
+          <div class="cert-body">
+            <span class="cert-issuer">Saylor Academy</span>
+            <h4>Computer Science Courses</h4>
+            <p>Core computer science principles and software engineering concepts.</p>
+          </div>
+          <div class="cert-badge-wrap"><span class="cert-badge">Certified</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section alt-bg">
+    <div class="container">
+      <div class="section-label reveal">Experience</div>
+      <h2 class="section-title reveal">Professional <span class="grad-text">Journey</span></h2>
+      <div class="exp-grid">
+
+        <div class="exp-card glass reveal">
+          <div class="exp-icon"><i class="fa-solid fa-bullhorn"></i></div>
+          <div class="exp-body">
+            <span class="exp-type">Extracurricular</span>
+            <h3>Campus Ambassador</h3>
+            <ul>
+              <li>Represented organizations and promoted events on campus.</li>
+              <li>Improved communication and leadership skills through outreach.</li>
+              <li>Coordinated outreach activities and student engagement programs.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card glass reveal">
+          <div class="exp-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="exp-body">
+            <span class="exp-type">Internship</span>
+            <h3>Data Analytics Virtual Internship</h3>
+            <ul>
+              <li>Worked on analytics-related tasks and real-world datasets.</li>
+              <li>Gained practical experience in data handling and reporting.</li>
+              <li>Improved analytical thinking and data-driven decision making.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CODING PROFILES -->
+  <section id="coding" class="section">
+    <div class="container">
+      <div class="section-label reveal">Coding Profiles</div>
+      <h2 class="section-title reveal">Where I <span class="grad-text">Practice</span></h2>
+      <div class="coding-grid">
+
+        <div class="coding-card glass reveal">
+          <div class="coding-platform">
+            <i class="fa-solid fa-h"></i>
+            <span>HackerRank</span>
+          </div>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p>Achieved <strong>5-Star Python Badge</strong>. Demonstrated strong Python problem-solving skills across challenges.</p>
+          <a href="https://www.hackerrank.com/" target="_blank" class="coding-link">View Profile <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="coding-card glass reveal">
+          <div class="coding-platform">
+            <i class="fa-solid fa-code"></i>
+            <span>LeetCode</span>
+          </div>
+          <p>Regularly practice coding problems focused on <strong>data structures and algorithms</strong> to build interview-ready problem-solving skills.</p>
+          <a href="https://leetcode.com/" target="_blank" class="coding-link">View Profile <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="coding-card glass reveal">
+          <div class="coding-platform">
+            <i class="fa-solid fa-laptop-code"></i>
+            <span>CodeTantra</span>
+          </div>
+          <p>Completed <strong>academic coding exercises and assessments</strong> aligned with curriculum requirements and programming fundamentals.</p>
+          <a href="#" class="coding-link">View Profile <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section alt-bg">
+    <div class="container">
+      <div class="section-label reveal">Achievements</div>
+      <h2 class="section-title reveal">Milestones & <span class="grad-text">Recognition</span></h2>
+      <div class="achieve-grid">
+
+        <div class="achieve-card glass reveal">
+          <div class="achieve-icon"><i class="fa-solid fa-star"></i></div>
+          <h4>HackerRank 5-Star</h4>
+          <p>Earned the prestigious 5-Star Python Badge on HackerRank, demonstrating strong coding proficiency.</p>
+        </div>
+
+        <div class="achieve-card glass reveal">
+          <div class="achieve-icon"><i class="fa-solid fa-certificate"></i></div>
+          <h4>Cisco Certifications</h4>
+          <p>Completed both Python Essentials and Python Programming certifications from Cisco Networking Academy.</p>
+        </div>
+
+        <div class="achieve-card glass reveal">
+          <div class="achieve-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <h4>Internship Completion</h4>
+          <p>Successfully completed a Data Analytics Virtual Internship, applying analytics skills to real-world scenarios.</p>
+        </div>
+
+        <div class="achieve-card glass reveal">
+          <div class="achieve-icon"><i class="fa-solid fa-laptop"></i></div>
+          <h4>Online Learning</h4>
+          <p>Consistent learner across platforms — Simplilearn, Microsoft Learn, LinkedIn Learning, and Saylor Academy.</p>
+        </div>
+
+        <div class="achieve-card glass reveal">
+          <div class="achieve-icon"><i class="fa-solid fa-trophy"></i></div>
+          <h4>Professional Development</h4>
+          <p>Earned Microsoft & LinkedIn's Career Essentials in Data Analysis, a globally recognized credential.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label reveal">Contact</div>
+      <h2 class="section-title reveal">Let's <span class="grad-text">Connect</span></h2>
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <p class="contact-intro">I'm always open to new opportunities, collaborations, and conversations. Feel free to reach out!</p>
+          <div class="contact-links">
+            <a href="mailto:maseerasyed16@gmail.com" class="clink glass">
+              <i class="fa-solid fa-envelope"></i>
+              <div><span>Email</span><strong>maseerasyed16@gmail.com</strong></div>
+            </a>
+            <a href="https://github.com/MaseeraSyed" target="_blank" class="clink glass">
+              <i class="fa-brands fa-github"></i>
+              <div><span>GitHub</span><strong>MaseeraSyed</strong></div>
+            </a>
+            <a href="https://www.linkedin.com/in/syed-maseera/" target="_blank" class="clink glass">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <div><span>LinkedIn</span><strong>syed-maseera</strong></div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form glass reveal" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-full"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          <p class="form-note" id="formMsg"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="nav-logo">SM<span class="logo-dot">.</span></span>
+          <p>MCA Student · Python Enthusiast · Aspiring Data Analyst</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-socials">
+          <a href="https://github.com/MaseeraSyed" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/syed-maseera/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:maseerasyed16@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-copy">&copy; 2025 Syed Maseera. Crafted with <i class="fa-solid fa-heart"></i> and Python.</div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button id="scrollTop" aria-label="Scroll to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
